@@ -1,66 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="">
+  <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<style>
-
-    body,html{
-        width: 100%;
-        overflow: hidden;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .container{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 0;
-        p{
-            padding: 0;
-            margin: 0;
-            padding-right: 10px;
-        }
-    }
-    iframe{
-        width: 100%;
-        height: 100%;
-    }
-</style>
-<script>
-    const imClick = (str)=>{
-        const obj = [
-            document.getElementById('iframe1'),
-            document.getElementById('iframe2')
-        ]
-        obj.forEach((item,index)=>{
-            console.log(item,index)
-            if(index === Number(str)){
-                item.style.display='block'
-            }else{
-                item.style.display='none'
-            }
-        })
-    }
-
-</script>
-<body>
-    <div class="container">
-<!--        'https://gitlab.ansteel.cn/automotivesteel/datasource/sdk.git'-->
-        <p onclick="imClick('0')">Vantage(内网)</p>
-<!--        'https://www.lienwei.top/'-->
-        <p onclick="imClick('1')">Vantage(外网)</p>
-    </div>
-    <div style="width: 100%;flex:1;">
-        <iframe id="iframe1"  src="https://gitlab.ansteel.cn/automotivesteel/datasource/sdk.git" onerror=""></iframe>
-        <iframe id="iframe2" style="display: none" src="https://www.lienwei.top/"></iframe>
-    </div>
-</body>
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-BWnYW0s1.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-fAGZO48M.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
 </html>
